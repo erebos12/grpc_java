@@ -6,6 +6,8 @@ package techschool.pcbook;
  // go code will be genrated with this go package name 
  // See files in /pb/*.go. They have 'package pb;'  
 option go_package = "pb";
+option java_package = "com.techschool.pcbook.pb";
+option java_multiple_files = true;
 
 message Keyboard {
     enum Layout {

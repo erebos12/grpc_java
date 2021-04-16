@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package techschool.pcbook;
+
+ // go code will be genrated with this go package name 
+ // See files in /pb/*.go. They have 'package pb;' 
+option go_package = "pb";
+
+import "memory_message.proto";
+
+message Storage {
+    enum Driver {
+        UNKNOWN = 0;
+        HDD = 1;
+        SSD = 2;
+    }
+
+    Driver driver = 1;
+    Memory memory = 2;
+
+}
